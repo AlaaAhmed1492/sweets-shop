@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-
 body {
   font-family: 'Poppins';
   background-color: rgb(240, 236, 234);
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -14,62 +12,108 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
+
 .container>h1 {
   font-size: 40px;
   margin-bottom: 20px;
-  color:rgb(78, 41, 24);
+  color: rgb(78, 41, 24);
 }
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-link {
+  text-decoration: none;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 35px;
+  right: 14px;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.empty-cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #9d6c3a6d;
+  border-radius: 50px;
+  width: 20%;
+  justify-self: center;
+}
+
 .sweets {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   overflow: hidden;
   grid-gap: 15px;
 }
+
 .sweet {
   width: 80%;
   border-radius: 25px;
   border: 2px solid rgb(78, 41, 24);
-  color:rgb(78, 41, 24);
+  color: rgb(78, 41, 24);
   padding: 20px;
   display: grid;
   align-items: center;
   justify-content: center;
   justify-self: center;
+  text-wrap: balance;
 }
+
 .sweet>figure {
   margin: 15px;
   justify-self: center;
 }
+
 .sweet1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .sweet1>figcaption {
   font-weight: 700;
   font-size: 30px;
 }
+
 .sweet1>p {
   margin-right: 14px;
 }
-#description {
+
+.description {
   margin-top: 0;
   vertical-align: center;
   font-size: 13px;
   font-style: italic;
   opacity: 0.6;
 }
+
 .bottom-part {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: auto;
   width: 100%;
 }
+
 .bottom-part>button {
   font-family: 'Poppins';
-  width: 47%;
-  margin-right: 10px;
+  width: 100%;
   height: 40px;
   background-color: rgb(99, 52, 31);
   color: rgb(246, 241, 236);
@@ -78,19 +122,14 @@ body {
   border-radius: 10px;
   transition: 0.3s;
 }
+
 .bottom-part>button:hover {
   cursor: pointer;
-  width: 55%;
-  height: 43px;
-  background-color: rgba(99, 52, 31, 0.468);
-}
-.quantity-selector {
-  display: flex;
-  width: 44%;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgba(99, 52, 31, 0.8);
+  transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
 .quantity-selector button {
   border: 2px solid rgb(78, 41, 24);
   font-size: 20px;
@@ -110,26 +149,9 @@ body {
   background-color: rgb(99, 52, 31);
   color: rgb(240, 236, 234);
 }
+=======
+>>>>>>> 6ed0078e6ab593e4ee0f03e9589a4c5527fb974c
 .quantity-selector span {
   font-size: 20px;
   font-weight: 500;
-}
-
-
-
-
-/******/
-.cart-top {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-}
-.cart-top>h1 {
-  font-size: 40px;
-  margin-left: 10px;
-  color:rgb(78, 41, 24);
-}
-#message {
-  margin-left: 10px;
-  color:rgb(78, 41, 24);
 }
