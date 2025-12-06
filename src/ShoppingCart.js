@@ -1,0 +1,1 @@
+export default reciept = [{id, name, price}];
